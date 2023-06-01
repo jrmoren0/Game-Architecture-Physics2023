@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
     private float waitTime = 1.0f;
 
 
-    public bool _isLocked;
+    public bool _isLocked = true;
 
 
 
