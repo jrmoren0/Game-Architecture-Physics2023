@@ -8,6 +8,7 @@ TagManager:
   - YellowProjectile
   - YellowCubes
   - RedCube
+  - PickCube
   layers:
   - Default
   - TransparentFX
