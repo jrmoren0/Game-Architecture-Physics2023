@@ -11,6 +11,13 @@ public class Door : MonoBehaviour
     private Material defualtDoorColor, detectedDoorColor;
 
     [SerializeField]
+    private Material defualtLockColor, detectedLockColor;
+
+
+    [SerializeField]
+    private MeshRenderer _LockRenderer;
+
+    [SerializeField]
     private Animator doorAnimator;
 
 
@@ -19,8 +26,10 @@ public class Door : MonoBehaviour
 
     private float waitTime = 1.0f;
 
-    [SerializeField]
-    public bool _isLocked;
+
+    public bool _isLocked = true;
+
+
 
 
 
@@ -28,11 +37,11 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "Player"){
+        if (other.tag == "Player") {
 
             timer = 0;
             _doorRenderer.material = detectedDoorColor;
-           
+
 
         }
 
@@ -69,12 +78,23 @@ public class Door : MonoBehaviour
         doorAnimator.SetBool("Open", false);
         _doorRenderer.material = defualtDoorColor;
 
-        
+
 
     }
 
 
+    public void LockDoor(){
+        _isLocked = true;
 
+        _LockRenderer.material = defualtLockColor;
+}
+
+    public void unLockDoor()
+    {
+        _isLocked = false;
+
+        _LockRenderer.material = detectedLockColor;
+    }
 
 
 }

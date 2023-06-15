@@ -19,6 +19,7 @@ public class PickCube : MonoBehaviour, IPickable
     {
         transform.position = attachTransform.position;
         transform.rotation = attachTransform.rotation;
+
         transform.SetParent(attachTransform);
 
         _cubeRB.isKinematic = true;
