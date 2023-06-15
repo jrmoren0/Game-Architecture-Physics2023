@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5321876045364150185}
   - component: {fileID: 4594383227349540370}
   - component: {fileID: 1563882754065631356}
-  - component: {fileID: -3422439824524320217}
   - component: {fileID: 9161855333053435421}
+  - component: {fileID: 945836769120446322}
   m_Layer: 8
   m_Name: Red Projectile
   m_TagString: RedProjectile
@@ -99,18 +99,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-3422439824524320217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9096961679634128828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587458f0dd3624fa69ad2905812dac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &9161855333053435421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,3 +115,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &945836769120446322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9096961679634128828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf503e632fbe245dc963449f0a2b0ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnReset:
+    m_PersistentCalls:
+      m_Calls: []

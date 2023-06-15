@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
     private Material defualtDoorColor, detectedDoorColor;
 
     [SerializeField]
-    private Material defualtLockColor, detectedzLockColor;
+    private Material defualtLockColor, detectedLockColor;
 
 
     [SerializeField]
@@ -28,6 +28,8 @@ public class Door : MonoBehaviour
 
 
     public bool _isLocked = true;
+
+
 
 
 
@@ -83,13 +85,15 @@ public class Door : MonoBehaviour
 
     public void LockDoor(){
         _isLocked = true;
+
         _LockRenderer.material = defualtLockColor;
 }
 
     public void unLockDoor()
     {
         _isLocked = false;
-        _LockRenderer.material = detectedzLockColor;
+
+        _LockRenderer.material = detectedLockColor;
     }
 
 
