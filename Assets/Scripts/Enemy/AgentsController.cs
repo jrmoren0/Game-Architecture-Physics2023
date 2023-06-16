@@ -14,7 +14,7 @@ public class AgentsController : MonoBehaviour
     [SerializeField] public Transform _agentEye;
 
 
-    [SerializeField] public float _playerCheckDistance;
+    [SerializeField]  public float _playerCheckDistance;
 
     [SerializeField] public float _checkRadius = .04f;
 

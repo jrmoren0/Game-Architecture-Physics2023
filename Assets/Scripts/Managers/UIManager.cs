@@ -40,6 +40,6 @@ public class UIManager : MonoBehaviour
 
    void OnHealthUpdate(float health)
     {
-        _healtText.text = "Health :" + health.ToString();
+        _healtText.text = "Health :" + Mathf.Floor(health).ToString(); /// 77.896f --> 78.0f
     }
 }

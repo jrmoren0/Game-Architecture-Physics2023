@@ -13,6 +13,11 @@ public class Health : MonoBehaviour
 
     private float _health;
 
+    [SerializeField]
+    GameObject gameOverText;
+
+
+
 
 
 
@@ -32,10 +37,16 @@ public class Health : MonoBehaviour
         if(_health <= 0)
         {
 
-            ///Playerd Is DED
+            
             _health = 0;
+            Die();
         }
 
        OnHealthUpdate(_health);
+    }
+
+    void Die()
+    {
+        gameOverText.SetActive(true);
     }
 }
