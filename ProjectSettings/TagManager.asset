@@ -15,7 +15,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - RedCubes
@@ -24,7 +24,7 @@ TagManager:
   - YellowProjectile
   - Selectable
   - Pickable
-  - 
+  - BakedStatic
   - 
   - 
   - 
