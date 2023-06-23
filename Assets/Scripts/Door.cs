@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField]
-    private MeshRenderer _doorRenderer;
+    //[SerializeField]
+    //private MeshRenderer _doorRenderer;
 
-    [SerializeField]
-    private Material defualtDoorColor, detectedDoorColor;
+    //[SerializeField]
+    //private Material defualtDoorColor, detectedDoorColor;
 
     [SerializeField]
     private Material defualtLockColor, detectedLockColor;
@@ -40,7 +40,7 @@ public class Door : MonoBehaviour
         if (other.tag == "Player") {
 
             timer = 0;
-            _doorRenderer.material = detectedDoorColor;
+           // _doorRenderer.material = detectedDoorColor;
 
 
         }
@@ -76,7 +76,7 @@ public class Door : MonoBehaviour
     {
 
         doorAnimator.SetBool("Open", false);
-        _doorRenderer.material = defualtDoorColor;
+       // _doorRenderer.material = defualtDoorColor;
 
 
 

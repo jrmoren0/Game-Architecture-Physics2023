@@ -9,11 +9,13 @@ TagManager:
   - YellowCubes
   - RedCube
   - PickCube
+  - Ground
+  - Builder
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - RedCubes
@@ -22,7 +24,7 @@ TagManager:
   - YellowProjectile
   - Selectable
   - Pickable
-  - 
+  - BakedStatic
   - 
   - 
   - 

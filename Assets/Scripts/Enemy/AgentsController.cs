@@ -16,7 +16,7 @@ public class AgentsController : MonoBehaviour
 
     [SerializeField] public float _playerCheckDistance;
 
-    [SerializeField] public float _checkRadius = .04f;
+    [SerializeField]  public float _checkRadius = .04f;
 
     private EnemyState _currentState;
 

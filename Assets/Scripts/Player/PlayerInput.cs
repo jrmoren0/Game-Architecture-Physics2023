@@ -28,6 +28,10 @@ public class PlayerInput : MonoBehaviour
 
     public bool _luancher2Pressed { get; private set; }
 
+    public bool _commandPressed { get; private set; }
+
+    public bool _undoPressed { get; private set; }
+
 
 
 
@@ -90,6 +94,9 @@ public class PlayerInput : MonoBehaviour
         //Assign luancher based on number key pressed
         _luancher1Pressed = Input.GetKeyDown(KeyCode.Alpha1);
         _luancher2Pressed = Input.GetKeyDown(KeyCode.Alpha2);
+
+        _commandPressed = Input.GetKeyDown(KeyCode.C);
+        _undoPressed = Input.GetKeyDown(KeyCode.Z);
 
     }
 }
