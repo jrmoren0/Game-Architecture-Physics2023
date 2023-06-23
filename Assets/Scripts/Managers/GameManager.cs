@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     private bool _isInputActive = true;
 
 
-
+    //Singeloton Pattern
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -114,25 +114,38 @@ public class GameManager : MonoBehaviour
 
         _isInputActive = true;
 
-    
+
+
+        _currentLevel.StartLevel();
         ChangeStateTo(Gamestate.LevelIn, _currentLevel);
 
 
-
     }
-
 
     private void RunLevel()
     {
-        Debug.Log("Running Level");
+        Debug.Log("Running Level " + _currentLevel.gameObject.name);
     }
 
-    private void CompletedLevel()
+    public void CompletedLevel()
     {
         Debug.Log("Level End");
 
         //goes to next level
-        ChangeStateTo(Gamestate.LevelStart, _levels[++_currentLevelIndex]);
+
+        if (_currentLevel._isFinalLevel)
+
+        {
+            ChangeStateTo(Gamestate.GameWin, _currentLevel);
+        }
+        else
+        {
+
+
+            ChangeStateTo(Gamestate.LevelStart, _levels[++_currentLevelIndex]);
+
+        }
+
     }
 
 

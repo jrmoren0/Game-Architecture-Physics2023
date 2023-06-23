@@ -5,10 +5,12 @@ using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
 {
+
+    [SerializeField] public bool _isFinalLevel;
+
     public UnityEvent _onLevelStart;
 
     public UnityEvent _onLevelEnd;
-
 
 
     public void StartLevel()
